@@ -1,0 +1,244 @@
+nav img {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d8e5d3;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 90%;
+    max-width: 900px;
+    padding: 15px 0 50px;
+    margin: 0 auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+nav {
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  background-color: #053e71;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+h2 {
+  color: #053e71;
+  font-family: Arial, sans-serif;
+  margin-top: 5px;
+}
+
+.introbox { 
+    background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px 10px 20px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.25;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+
+.video-container {
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 16 / 9;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.statement {
+    font-size: 23px;
+    line-height: 1.5;
+    color: #053e71;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.intro-row {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.intro-text {
+    flex: 1;
+}
+
+.donate-button {
+    display: inline-block;
+    background-color: #008a5b;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: none;
+    transition: background-color 0.2s;
+}
+
+.donate-button:hover {
+    background-color: #006b46;
+}
+
+.video-cta {
+    text-align: center;
+    margin: 20px 0 30px;
+}
+
+.donation-note {
+    font-size: 13px;
+    color: #555;
+    text-align: center;
+    font-style: italic;
+}
+
+#donate {
+    scroll-margin-top: 80px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.truck-graphic {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.state-shape {
+    display: block;
+    margin: 20px auto;
+    max-width: 300px;
+    height: auto;
+}
+
+
+
+/* Container for all four donation boxes */
+.donation-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 15px;
+    margin: 25px 0;
+}
+
+/* Individual donation boxes */
+.donation-card {
+    background-color: #217346;
+    border-radius: 12px;
+    padding: 20px 10px;
+    text-align: center;
+    min-width: 0;
+}
+
+/* State images */
+.state-shape {
+    width: 100%;
+    max-width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+/* Donation amounts */
+.donation-card h2 {
+    color: #ffffff;
+    font-size: 30px;
+    margin: 5px 0;
+}
+
+/* State names */
+.donation-card h3 {
+    color: #ffffff;
+    font-size: 20px;
+    margin: 8px 0;
+}
+
+/* Descriptions */
+.donation-card p {
+    color: #ffffff;
+    font-size: 15px;
+    margin: 8px 0 0;
+    line-height: 1.4;
+}
+
+
+.donation-form-section {
+    background-color: white;
+    border-radius: 12px;
+    padding: 25px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.donation-form {
+    width: 100%;
+    height: 900px;
+    border: none;
+    margin-top: 20px;
+}
+
+
+/* Tablet: two boxes per row */
+@media (max-width: 800px) {
+    .donation-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Phone: one box per row */
+@media (max-width: 450px) {
+    .donation-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .intro-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+
+    .donate-button {
+        text-align: center;
+    }
+}
